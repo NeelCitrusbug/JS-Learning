@@ -100,32 +100,50 @@ const todos = [
 ];
 
 
-console.log(todos[1].text);
+// console.log(todos[1].text);
 
 
-const todoJSON = JSON.stringify(todos);
-console.log(todoJSON);
+// const todoJSON = JSON.stringify(todos);
+// console.log(todoJSON);
 
-//for loops
-for(let i=0; i<10; i++){
-    console.log(`For loop number : ${i}`);
-}
+// //for loops
+// for(let i=0; i<10; i++){
+//     console.log(`For loop number : ${i}`);
+// }
 
-// while 
-let i=0;
-while(i<10){
-    console.log(`While loop number : ${i}`);
-    i++;
-}
+// // while 
+// let i=0;
+// while(i<10){
+//     console.log(`While loop number : ${i}`);
+//     i++;
+// }
 
-// loop through array 
+// // loop through array 
 
-for(let i=0; i<todos.length; i++){
-    console.log(todos[i].text);
-}
+// for(let i=0; i<todos.length; i++){
+//     console.log(todos[i].text);
+// }
 
-for(let todo of todos){
-    console.log(todo.text);
-}
+// for(let todo of todos){
+//     console.log(todo.text);
+// }
 
 // =================== Arrays of objecs and JSON 
+
+
+
+// ======================== Arrow functions 
+
+
+const addNums = (num1=1, num2=1) => num1+num2;
+
+const addNum = num1 => num1+5;
+
+
+console.log(addNums(5,5));
+
+console.log(addNum(5));
+
+todos.forEach((todo) => console.log(todo) );
+
+// ======================== Arrow functions 
