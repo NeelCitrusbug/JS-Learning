@@ -106,4 +106,26 @@ console.log(todos[1].text);
 const todoJSON = JSON.stringify(todos);
 console.log(todoJSON);
 
+//for loops
+for(let i=0; i<10; i++){
+    console.log(`For loop number : ${i}`);
+}
+
+// while 
+let i=0;
+while(i<10){
+    console.log(`While loop number : ${i}`);
+    i++;
+}
+
+// loop through array 
+
+for(let i=0; i<todos.length; i++){
+    console.log(todos[i].text);
+}
+
+for(let todo of todos){
+    console.log(todo.text);
+}
+
 // =================== Arrays of objecs and JSON 
