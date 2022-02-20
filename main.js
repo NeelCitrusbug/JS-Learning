@@ -81,23 +81,23 @@
 // =================== Arrays of objecs and JSON 
 
 
-const todos = [
-    {
-        id:1,
-        text:'Take out the trash',
-        isCompleted: true
-    },
-    {
-        id:2,
-        text:'Meeting with boss',
-        isCompleted: true
-    },
-    {
-        id:3,
-        text:'Dentist appointment',
-        isCompleted: false
-    }
-];
+// const todos = [
+//     {
+//         id:1,
+//         text:'Take out the trash',
+//         isCompleted: true
+//     },
+//     {
+//         id:2,
+//         text:'Meeting with boss',
+//         isCompleted: true
+//     },
+//     {
+//         id:3,
+//         text:'Dentist appointment',
+//         isCompleted: false
+//     }
+// ];
 
 
 // console.log(todos[1].text);
@@ -135,15 +135,44 @@ const todos = [
 // ======================== Arrow functions 
 
 
-const addNums = (num1=1, num2=1) => num1+num2;
+// const addNums = (num1=1, num2=1) => num1+num2;
 
-const addNum = num1 => num1+5;
+// const addNum = num1 => num1+5;
 
 
-console.log(addNums(5,5));
+// console.log(addNums(5,5));
 
-console.log(addNum(5));
+// console.log(addNum(5));
 
-todos.forEach((todo) => console.log(todo) );
+// todos.forEach((todo) => console.log(todo) );
 
 // ======================== Arrow functions 
+
+
+
+// =========================== ES6 classes 
+
+
+class Person{
+    constructor(firstname, lastname, dob){
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.dob = new Date(dob);
+    }
+
+    getBirthYear(){
+        return this.dob.getFullYear();
+    }
+
+    getFullName(){
+        return `${this.firstname} ${this.lastname}`;
+    }
+}
+
+p1 = new Person('neel','shah','09-16-1999');
+
+console.log(p1.getFullName());
+console.log(p1.getBirthYear());
+console.log(p1);    
+// =========================== ES6 classes 
+
