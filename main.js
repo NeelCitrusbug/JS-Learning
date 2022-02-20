@@ -39,40 +39,71 @@
 // ======================= Arrays - variables that holds multiple values
 
 
-// Create array using array constructor
-const numbers = new Array(1,2,3,4,5);
+// // Create array using array constructor
+// const numbers = new Array(1,2,3,4,5);
 
-console.log(numbers);
+// console.log(numbers);
 
 
-const fruits = ['apples', 'oranges', 'pears', 10, true];
+// const fruits = ['apples', 'oranges', 'pears', 10, true];
 
-console.log(fruits);
+// console.log(fruits);
 
-// accessing items 
-console.log(fruits[1]);
+// // accessing items 
+// console.log(fruits[1]);
 
-//adding item
-fruits[3] = 'graps';
-console.log(fruits);
+// //adding item
+// fruits[3] = 'graps';
+// console.log(fruits);
 
-// push item at the end 
-fruits.push('mangos');
-console.log(fruits);
+// // push item at the end 
+// fruits.push('mangos');
+// console.log(fruits);
 
-// push item at the start
-fruits.unshift('strawberries');
-console.log(fruits);
+// // push item at the start
+// fruits.unshift('strawberries');
+// console.log(fruits);
 
-//to remove last item
-fruits.pop()
-console.log(fruits);
+// //to remove last item
+// fruits.pop()
+// console.log(fruits);
 
-//to check if it's array
-console.log(Array.isArray(fruits));
-console.log(Array.isArray('hello'));
+// //to check if it's array
+// console.log(Array.isArray(fruits));
+// console.log(Array.isArray('hello'));
 
-// get index of item 
-console.log(fruits.indexOf('oranges'));
+// // get index of item 
+// console.log(fruits.indexOf('oranges'));
 
 // ======================= Arrays - variables that holds multiple values
+
+
+// =================== Arrays of objecs and JSON 
+
+
+const todos = [
+    {
+        id:1,
+        text:'Take out the trash',
+        isCompleted: true
+    },
+    {
+        id:2,
+        text:'Meeting with boss',
+        isCompleted: true
+    },
+    {
+        id:3,
+        text:'Dentist appointment',
+        isCompleted: false
+    }
+];
+
+
+console.log(todos[1].text);
+
+
+const todoJSON = JSON.stringify(todos);
+console.log(todoJSON);
+
+// =================== Arrays of objecs and JSON 
